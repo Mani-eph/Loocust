@@ -1,0 +1,16 @@
+
+/* media device */
+$min-w:min-width;
+$max-w:max-width;
+$tab-lscp:992px;
+$tab-port:992px;
+$tab-landscp:992px;
+$tab-port:992px;
+/* media device */
+
+
+._loocust-nav .navbar .navbar-nav li a{
+@media screen and ($min-w: $tab-lscp){
+ padding: 10px 20px;
+}
+}

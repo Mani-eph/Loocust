@@ -1,6 +1,3 @@
-
-
-
 *{
 	margin: 0;
 	padding: 0;
@@ -19,12 +16,8 @@ body{
 }
 ._loocust-nav .navbar li strike {
   text-decoration: none;
-  /*we're replacing the default line-through*/
-  position: relative;
+   position: relative;
   display: inline-block;
-  /* keeps it from wrapping across multiple lines */
-
-
 }
 ._loocust-nav .navbar li:hover strike:after {
   content: "";
@@ -46,6 +39,7 @@ body{
 
 ._about{
   padding-top: 25px;
+
 }
 
 

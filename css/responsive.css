@@ -1,0 +1,10 @@
+/* media device */
+/* media device */
+@media screen and (min-width: 992px) {
+  /* line 12, D:/Mani-files/web/htdocs/Projects/Git-web/Loocust/sass/responsive.scss */
+  ._loocust-nav .navbar .navbar-nav li a {
+    padding: 10px 20px;
+  }
+}
+
+/*# sourceMappingURL=../css/responsive.map */
