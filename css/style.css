@@ -7,16 +7,16 @@ body{
 }
 
 ._loocust-nav .navbar{
-    padding: 25px 5%;
+  padding: 25px 5%;
 }
 
 ._loocust-nav .navbar li a{
 	color: #fff;
-	   
+  
 }
 ._loocust-nav .navbar li strike {
   text-decoration: none;
-   position: relative;
+  position: relative;
   display: inline-block;
 }
 ._loocust-nav .navbar li:hover strike:after {
@@ -33,7 +33,7 @@ body{
   /* 1px = half the line thickness */
   width: 120%;
   transform: rotateZ(-4deg);
-    transition: width .2s;
+  transition: width .2s;
 }
 
 
@@ -48,6 +48,6 @@ body{
 
 @media (min-width: 992px){
 	._loocust-nav .navbar .navbar-nav li a{
-		 padding: 10px 20px;
-	}
+   padding: 10px 20px;
+ }
 }

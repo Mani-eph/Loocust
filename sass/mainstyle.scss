@@ -3,11 +3,7 @@ $primary_font:'Open Sans', sans-serif;
 $loo_w:#ffffff;
 $loo_blk:#666666;
 $loo_red:#eb3333;
-
-
-
-
-
+$f-xs:14px;
 
 
 
@@ -19,83 +15,128 @@ body {
 	background: url("../img/bg.jpg");
 	font-family:$primary_font;
 	color:$loo_blk;
+	// font-size:$f-xs;
 }
 
 
 ._loocust-nav .navbar{
 	padding: 25px 5% !important;
 
-			li
-			{ 
-			 	a
-				{
-					color: #fff;
-					strike
-							{
-								text-decoration: none;
-								position: relative;
-								display: inline-block;
-							
-							}
-				}
-				&:hover {
-					strike{
-						&:after
-								{
-										content: "";
-
-										position: absolute;
-										bottom: 0;
-										left: 0;
-										border-top: 2px solid red;
-										height: 45%;
-										/* adjust as necessary, depending on line thickness */
-										/* or use calc() if you don't need to support IE8: */
-										height: calc(50% - 1px);
-										/* 1px = half the line thickness */
-										width: 120%;
-										transform: rotateZ(-4deg);
-										transition: width .2s;
-								}
-							}
-				}
-								
+	li
+	{ 
+		a
+		{
+			color: #fff;
+			span
+			{
+				text-decoration: none;
+				position: relative;
+				display: inline-block;
+				
 			}
+		}
+		&:hover {
+			span{
+				&:after
+				{
+					content: "";
+
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					border-top: 2px solid red;
+					height: 45%;
+					/* adjust as necessary, depending on line thickness */
+					/* or use calc() if you don't need to support IE8: */
+					height: calc(50% - 1px);
+					/* 1px = half the line thickness */
+					width: 120%;
+					// transform: rotateZ(-4deg);
+					transition: width .2s;
+				}
+			}
+		}
+		
+	}
 }
 
 .strick {
-    width: 100px;
-    border-radius: 30px;
-    margin-bottom: 20px;
-    border-bottom: 4px $loo_red solid;
+	width: 100px;
+	border-radius: 30px;
+	margin-bottom: 20px;
+	border-bottom: 4px $loo_red solid;
 
 }
 ._about_sec{
-  padding-top: 75px;
+	padding-top: 75px;
 }
-._prod_sec{
+._prod_div
+{
 	background:$loo_w;
 	padding: 0px 3%;
-}
-._prod_cnt{
 
-			h3{
+	.navbar .navbar-nav 
+	{
+		li
+		{
+			.nav-link
+			{
+				font-size: 14px;
+				margin: 0px 10px;
+				color:$loo_blk;
+
+				&:hover, &:active
+				{
+					color:$loo_red;
+				}
+			}
+			&.active .nav-link
+			{
+				color:$loo_red;
+			}
+
+		}
+
+	}
+	.tabbable
+	{
+		padding-top:3%;
+
+		.nav.nav-tabs {
+			float: left;
+			display: block;
+			margin-right: 20px;
+			border-bottom: 0;
+			border-right: 1px solid #ddd;
+			padding-right: 15px;
+		}
+	}
+
+}
+._prod_cnt
+{
+
+	h3
+	{
 		margin-bottom: 10px;
 		text-transform: uppercase;
-					}
-
-			p{
-		padding-top: 10px;
-			}
-			&._cnt-white{
-			h3{
-				color:$loo_w;
-				}
-				p{
-				color:$loo_w;
-				}
-			}
 	}
+	p
+	{
+		padding-top: 10px;
+	}
+	&._cnt-white
+	{
+		h3
+		{
+			color:$loo_w;
+		}
+		p
+		{
+			color:$loo_w;
+		}
+	}
+}
 
 
 
