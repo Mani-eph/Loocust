@@ -17,8 +17,34 @@ body {
 	color:$loo_blk;
 	// font-size:$f-xs;
 }
-
-
+.btn-theme{
+	padding: 2px;
+    border-radius: 45px;
+    background: transparent;
+    font-size: 14px;
+    border: 2px $loo_red solid;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.btn-theme-fill{
+   border-radius: 45px;
+    background: #eb3333;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 12px 35px;
+    text-transform: uppercase;
+    color:$loo_w;
+}
+main{
+	margin-bottom:75px;
+}
+._cnt-white{
+	color:$loo_w !important;
+	&:hover{
+		color:$loo_red !important;
+	}
+}
+/* Menu */
 ._loocust-nav .navbar{
 	padding: 25px 5% !important;
 
@@ -60,8 +86,10 @@ body {
 	}
 }
 
+/* Menu End */
+
 .strick {
-	width: 100px;
+	width: 70px;
 	border-radius: 30px;
 	margin-bottom: 20px;
 	border-bottom: 4px $loo_red solid;
@@ -70,6 +98,8 @@ body {
 ._about_sec{
 	padding-top: 75px;
 }
+
+/* product */
 ._prod_div
 {
 	background:$loo_w;
@@ -94,25 +124,64 @@ body {
 			{
 				color:$loo_red;
 			}
-
+&.active .nav-link._cnt-white{
+	color:$loo_red !important;
+}
 		}
 
 	}
+	/* Slider tab*/
 	.tabbable
 	{
 		padding-top:3%;
+		padding-bottom:25px;
 
 		.nav.nav-tabs {
 			float: left;
 			display: block;
-			margin-right: 20px;
-			border-bottom: 0;
-			border-right: 1px solid #ddd;
-			padding-right: 15px;
+			margin-right: 10px;
+			border: 0;			
+		
+
+			 &:before{
+  content:" "; /* with class ModalCarrot ??*/
+  background:url(../img/zz.svg);
+     background-size: 10px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 26px;
+
+}
+
+			li{
+				display: flex;
+				&.active, &:hover, &:active{
+					span{
+						    visibility: visible;
+					}
+					}
+					a{
+					align-items: center;
+				    display: inline-flex;
+				    color: $loo_blk;
+				    font-size:13px;
+    font-weight: 700;
+    text-decoration: none;
+				    embed{
+				    	    height: 5rem;
+				    	        margin-right: 10px;
+				    }
+				    span{
+				    	visibility:hidden;
+				    }
+				}
+			}
 		}
 	}
 
+	/* Slider tab End*/
 }
+/* product cnt */
 ._prod_cnt
 {
 
@@ -124,7 +193,22 @@ body {
 	p
 	{
 		padding-top: 10px;
+		font-size:$f-xs;
 	}
+	.btn-prod {
+	img{
+width:34px;
+	}
+	&:hover{
+ img{
+ 	-webkit-animation: rotation 2s infinite linear;
+
+ }
+.more-cnt{
+	color:$loo_red;
+	}
+}
+}
 	&._cnt-white
 	{
 		h3
@@ -135,7 +219,77 @@ body {
 		{
 			color:$loo_w;
 		}
+		.more-cnt{
+				color:$loo_w;
+
+		}
 	}
+}
+.more-cnt{
+    padding: 0px 15px;
+}
+li{
+
+&.active{
+	
+}
+.zip{
+	width:20px;
+}
+}
+._social_icon {
+
+    padding-bottom: 25px;
+    text-align: right;
+	i{
+	    font-size: 15px;
+    padding: 9px;
+    border: 1px $loo_blk solid;
+    min-width: 35px;
+    min-height: 35px;
+    text-align: center;
+    margin-left: 8px;
+    border-radius: 50px;
+    color:$loo_blk;
+&:hover{
+color:$loo_red;
+border: 1px $loo_red solid;
+}
+}
+}
+/* product cnt */
+
+/* product */
+
+footer{
+	    
+        background: #2a8153;
+        .subscribe-info{
+        	   padding: 30px 20px;
+    border-bottom: 1px #fff solid;
+        	    .wwa, .wwa a{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom:0;
+        	    }
+        }
+        .addr-info{
+        	 padding: 20px;
+        	 text-align:center;
+        	 color:#fff;
+        	 a {
+ color:#fff;
+        	 
+        	 &:hover{
+
+        	 	}}
+        }
+}
+
+
+#Womens{
+	background: url("../img/bg-w.jpg");
+    background-size: cover;
 }
 
 
@@ -145,6 +299,35 @@ body {
 
 
 
+
+/* Zip Svg control */
+ .rec_clr{ 
+      fill:#d6d6d6;
+      width: 12.4px;
+      height: 43.2px;
+   &.active{
+         fill:$loo_red;
+      }
+  }
+     
+      .zippy{
+      	display:none;
+   path,rect{
+  fill:$loo_red;
+   }
+      }
+      
+
+/* Zip Svg control */
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
 
 
 
